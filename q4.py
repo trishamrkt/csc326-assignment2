@@ -17,4 +17,8 @@ def update_dict(line, d):
             d[word] = 1;
 
 if __name__ == "__main__":
+    # Expected output ['a', 'loki', 'heart', 'the', 'eyes', 'not', 'watson', 'calc', 'outline', 'quick']
     print find_popular("test_file.txt")
+    
+    # Expected output ['the', 'to', 'are', 'in', 'all', 'they', 'Petunia', 'people', 'Dudley,', 'on']
+    print find_popular("test_file2.txt")
