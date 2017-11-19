@@ -22,9 +22,10 @@ def my_reduce(func, iterable):
         
     return new_val;
 
-def my_filter():
-    return 
+def my_filter(func, iterable):
+    return [elem for elem in iterable if func(elem)]
 
 if __name__ == "__main__":
     print my_map(lambda x: x**2, range(10))
     print my_reduce(lambda x,y: x*y, [1,2,3,4])
+    print my_filter(lambda x: x > 10, [2,1,64,7,2,3,43,13])
