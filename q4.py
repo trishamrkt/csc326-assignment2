@@ -5,7 +5,7 @@ def find_popular(file_name):
             update_dict(line, word_dict)
     
         popular = sorted(word_dict, key=word_dict.get, reverse=True)[:10]
-    return popular
+    print popular
 
 def update_dict(line, d):
     words = line.split();
@@ -18,7 +18,7 @@ def update_dict(line, d):
 
 if __name__ == "__main__":
     # Expected output ['a', 'loki', 'heart', 'the', 'eyes', 'not', 'watson', 'calc', 'outline', 'quick']
-    print find_popular("test_file.txt")
+    find_popular("test_file.txt")
     
     # Expected output ['the', 'to', 'are', 'in', 'all', 'they', 'Petunia', 'people', 'Dudley,', 'on']
-    print find_popular("test_file2.txt")
+    find_popular("test_file2.txt")
